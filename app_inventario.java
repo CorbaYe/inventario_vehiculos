@@ -29,6 +29,7 @@ public class app_inventario {
                     break;
             case 4: fnt_menu(false);
                     break;
+            default: JOptionPane.showMessageDialog(null, "Opción no disponible", "Registro", JOptionPane.ERROR_MESSAGE);
         }
     }
 
