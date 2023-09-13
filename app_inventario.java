@@ -1,8 +1,15 @@
 import javax.swing.JOptionPane;
 
 public class app_inventario {
+
     public static void main(String[] args) {
         fnt_menu(true);
+    }
+
+    private static void fnt_agregar(String propietario, String placa,String fecha, int modelo, String color, String fichaTecnica){
+        if(propietario.equals("") || placa.equals("") || fecha.equals("") || color.equals("") || fichaTecnica.equals("")){
+            
+        }
     }
 
     private static void fnt_menu(boolean m){
