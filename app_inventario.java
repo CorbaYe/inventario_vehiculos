@@ -27,7 +27,7 @@ public class app_inventario {
                     String fichaTecnica = JOptionPane.showInputDialog(null, "Ficha Tecnica");
                     fnt_agregar(propietario, placa, fecha, modelo, color, fichaTecnica);
                     break;
-            case 4: fnt_menu(false);
+            case 4: System.exit(0);
                     break;
             default: JOptionPane.showMessageDialog(null, "Opción no disponible", "Registro", JOptionPane.ERROR_MESSAGE);
         }
@@ -36,6 +36,7 @@ public class app_inventario {
     private static void fnt_menu(boolean m){
         do{
             int menu = Integer.parseInt(JOptionPane.showInputDialog(null, "<<< MENU PRINCIPAL >>>\n1. Registrar\n2. Consultar\n3. Actaualizar\n4. Salir"));
+            fnt_selector(menu);
         }while(m);
     }
 
